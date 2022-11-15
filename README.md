@@ -17,6 +17,6 @@
  
  ```
  
- ## Authors
+ ## Autor
 
 [@anaskudaish](https://www.github.com/anaskudaish)
