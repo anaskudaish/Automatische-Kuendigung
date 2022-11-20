@@ -170,9 +170,9 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID6</x:Reference>
+      <x:Reference>__ReferenceID5</x:Reference>
     </Flowchart.StartNode>
-    <FlowStep x:Name="__ReferenceID3">
+    <FlowStep x:Name="__ReferenceID1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">320,219.49999999999997</av:Point>
@@ -188,7 +188,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:BuildDataTable>
       <FlowStep.Next>
-        <FlowStep x:Name="__ReferenceID1">
+        <FlowStep x:Name="__ReferenceID0">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">320,325</av:Point>
@@ -441,7 +441,7 @@
             </If>
           </Sequence>
           <FlowStep.Next>
-            <FlowDecision x:Name="__ReferenceID4" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+            <FlowDecision x:Name="__ReferenceID2" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
               <FlowDecision.Condition>
                 <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="validationStationError" />
               </FlowDecision.Condition>
@@ -450,149 +450,151 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <av:Point x:Key="ShapeLocation">380.5,436.5</av:Point>
                   <av:Size x:Key="ShapeSize">79,87</av:Size>
-                  <av:PointCollection x:Key="FalseConnector">459.5,480 650,480 650,525</av:PointCollection>
-                  <av:PointCollection x:Key="TrueConnector">380.5,480 200,480 200,549.5</av:PointCollection>
+                  <av:PointCollection x:Key="FalseConnector">459.5,480 610,480 610,545</av:PointCollection>
+                  <av:PointCollection x:Key="TrueConnector">380.5,480 210,480 210,535</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <FlowDecision.True>
-                <FlowStep x:Name="__ReferenceID5">
+                <FlowStep x:Name="__ReferenceID3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">100,549.5</av:Point>
-                      <av:Size x:Key="ShapeSize">200,61</av:Size>
+                      <av:Point x:Key="ShapeLocation">110,535</av:Point>
+                      <av:Size x:Key="ShapeSize">200,90</av:Size>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="200,61" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Dokument ist nicht lesbar&quot;]">
+                  <Sequence DisplayName="Email senden um manuelle Eingaben von Dtaen" sap:VirtualizedContainerService.HintSize="200,90" sap2010:WorkflowViewState.IdRef="Sequence_35">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                  </ui:MessageBox>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="338,94" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Dokument ist nicht lesbar&quot;]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:MessageBox>
+                  </Sequence>
                 </FlowStep>
               </FlowDecision.True>
               <FlowDecision.False>
-                <FlowStep x:Name="__ReferenceID2">
+                <FlowStep x:Name="__ReferenceID4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">550,525</av:Point>
+                      <av:Point x:Key="ShapeLocation">510,545</av:Point>
                       <av:Size x:Key="ShapeSize">200,90</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">650,615 650,655</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Daten zuweisen" sap:VirtualizedContainerService.HintSize="200,90" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                  <Sequence DisplayName="extrahierte Daten verarbeiten" sap:VirtualizedContainerService.HintSize="200,90" sap2010:WorkflowViewState.IdRef="Sequence_39">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_10">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[kundennummer]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">[Dt1.rows(0)("kundennummer").ToString]</InArgument>
-                      </Assign.Value>
+                    <Sequence DisplayName="Daten zuweisen" sap:VirtualizedContainerService.HintSize="592,412" sap2010:WorkflowViewState.IdRef="Sequence_36">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                    </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_11">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[kundenadresse]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">[Dt1.rows(0)("kundenadresse").ToString]</InArgument>
-                      </Assign.Value>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_12">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[firmaadresse]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">[Dt1.rows(0)("firmaadresse").ToString]</InArgument>
-                      </Assign.Value>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </Assign>
-                  </Sequence>
-                  <FlowStep.Next>
-                    <FlowStep x:Name="__ReferenceID0">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">550,655</av:Point>
-                          <av:Size x:Key="ShapeSize">200,90</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">300,454 300,404.04</av:PointCollection>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Extrahierte Daten zu Kündigungsschreiben " sap:VirtualizedContainerService.HintSize="200,90" sap2010:WorkflowViewState.IdRef="Sequence_10">
-                        <Sequence.Variables>
-                          <Variable x:TypeArguments="s:DateTime" Name="Datum" />
-                          <Variable x:TypeArguments="x:String" Name="Vollname" />
-                        </Sequence.Variables>
+                      <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_14">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[kundennummer]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[Dt1.rows(0)("kundennummer").ToString]</InArgument>
+                        </Assign.Value>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:CopyFile ContinueOnError="{x:Null}" Destination="DocumentProcessing\Kündigung\Kündigungsvorlage.docx" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="530,163" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="Kündigungsvorlage.docx" />
-                        <p9:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" FilePath="DocumentProcessing\Kündigung\Kündigungsvorlage.docx" sap:VirtualizedContainerService.HintSize="530,102" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_1" Replace="[kundenadresse]" Search="Kundenadresse" />
-                        <p9:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" FilePath="DocumentProcessing\Kündigung\Kündigungsvorlage.docx" sap:VirtualizedContainerService.HintSize="530,102" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_2" Replace="[firmaadresse]" Search="Firmaadresse" />
-                        <p9:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" FilePath="DocumentProcessing\Kündigung\Kündigungsvorlage.docx" sap:VirtualizedContainerService.HintSize="530,102" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_3" Replace="[kundennummer]" Search="000000" />
-                        <Assign sap:VirtualizedContainerService.HintSize="530,70" sap2010:WorkflowViewState.IdRef="Assign_4">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="s:DateTime">[Datum]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
-                          </Assign.Value>
-                        </Assign>
-                        <p9:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" FilePath="DocumentProcessing\Kündigung\Kündigungsvorlage.docx" sap:VirtualizedContainerService.HintSize="530,102" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_4" Replace="[Datum.ToShortDateString]" Search="00.00.2000" />
-                        <Assign sap:VirtualizedContainerService.HintSize="530,70" sap2010:WorkflowViewState.IdRef="Assign_13">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:String">[Vollname]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:String">[firstName +" "+ lastName]</InArgument>
-                          </Assign.Value>
-                        </Assign>
-                        <p9:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" FilePath="DocumentProcessing\Kündigung\Kündigungsvorlage.docx" sap:VirtualizedContainerService.HintSize="530,102" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_5" Replace="[Vollname]" Search="Vollname" />
-                        <p9:WordApplicationScope DisplayName="Word Application Scope" FilePath="DocumentProcessing\Kündigung\Kündigungsvorlage.docx" sap:VirtualizedContainerService.HintSize="530,361" sap2010:WorkflowViewState.IdRef="WordApplicationScope_2">
-                          <p9:WordApplicationScope.Body>
-                            <ActivityAction x:TypeArguments="ui:WordDocument">
-                              <ActivityAction.Argument>
-                                <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
-                              </ActivityAction.Argument>
-                              <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="496,242" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_15">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[kundenadresse]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[Dt1.rows(0)("kundenadresse").ToString]</InArgument>
+                        </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_16">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[firmaadresse]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[Dt1.rows(0)("firmaadresse").ToString]</InArgument>
+                        </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Assign>
+                    </Sequence>
+                    <Sequence DisplayName="Extrahierte Daten zu Kündigungsschreiben " sap:VirtualizedContainerService.HintSize="592,1616" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="s:DateTime" Name="Datum" />
+                        <Variable x:TypeArguments="x:String" Name="Vollname" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:CopyFile ContinueOnError="{x:Null}" Destination="DocumentProcessing\Kündigung\Kündigungsvorlage.docx" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="530,163" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="Kündigungsvorlage.docx" />
+                      <p9:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" FilePath="DocumentProcessing\Kündigung\Kündigungsvorlage.docx" sap:VirtualizedContainerService.HintSize="530,102" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_6" Replace="[kundenadresse]" Search="Kundenadresse" />
+                      <p9:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" FilePath="DocumentProcessing\Kündigung\Kündigungsvorlage.docx" sap:VirtualizedContainerService.HintSize="530,102" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_7" Replace="[firmaadresse]" Search="Firmaadresse" />
+                      <p9:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" FilePath="DocumentProcessing\Kündigung\Kündigungsvorlage.docx" sap:VirtualizedContainerService.HintSize="530,102" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_8" Replace="[kundennummer]" Search="000000" />
+                      <Assign sap:VirtualizedContainerService.HintSize="530,70" sap2010:WorkflowViewState.IdRef="Assign_17">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="s:DateTime">[Datum]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <p9:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" FilePath="DocumentProcessing\Kündigung\Kündigungsvorlage.docx" sap:VirtualizedContainerService.HintSize="530,102" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_9" Replace="[Datum.ToShortDateString]" Search="00.00.2000" />
+                      <Assign sap:VirtualizedContainerService.HintSize="530,70" sap2010:WorkflowViewState.IdRef="Assign_18">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Vollname]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[firstName +" "+ lastName]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <p9:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" FilePath="DocumentProcessing\Kündigung\Kündigungsvorlage.docx" sap:VirtualizedContainerService.HintSize="530,102" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_10" Replace="[Vollname]" Search="Vollname" />
+                      <p9:WordApplicationScope DisplayName="Word Application Scope" FilePath="DocumentProcessing\Kündigung\Kündigungsvorlage.docx" sap:VirtualizedContainerService.HintSize="530,361" sap2010:WorkflowViewState.IdRef="WordApplicationScope_3">
+                        <p9:WordApplicationScope.Body>
+                          <ActivityAction x:TypeArguments="ui:WordDocument">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="496,242" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <p9:WordExportToPdf DisplayName="Save Document as PDF" FilePath="DocumentProcessing\Kündigung\Kündigung_done.pdf" sap:VirtualizedContainerService.HintSize="434,120" sap2010:WorkflowViewState.IdRef="WordExportToPdf_3">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <p9:WordExportToPdf DisplayName="Save Document as PDF" FilePath="DocumentProcessing\Kündigung\Kündigung_done.pdf" sap:VirtualizedContainerService.HintSize="434,120" sap2010:WorkflowViewState.IdRef="WordExportToPdf_2">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                </p9:WordExportToPdf>
-                              </Sequence>
-                            </ActivityAction>
-                          </p9:WordApplicationScope.Body>
-                        </p9:WordApplicationScope>
-                      </Sequence>
-                    </FlowStep>
-                  </FlowStep.Next>
+                              </p9:WordExportToPdf>
+                            </Sequence>
+                          </ActivityAction>
+                        </p9:WordApplicationScope.Body>
+                      </p9:WordApplicationScope>
+                    </Sequence>
+                  </Sequence>
                 </FlowStep>
               </FlowDecision.False>
             </FlowDecision>
@@ -601,9 +603,7 @@
       </FlowStep.Next>
     </FlowStep>
     <x:Reference>__ReferenceID0</x:Reference>
-    <x:Reference>__ReferenceID1</x:Reference>
-    <x:Reference>__ReferenceID2</x:Reference>
-    <FlowStep x:Name="__ReferenceID6">
+    <FlowStep x:Name="__ReferenceID5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">320,105</av:Point>
@@ -653,10 +653,11 @@
         </ufa:FormActivity>
       </Sequence>
       <FlowStep.Next>
-        <x:Reference>__ReferenceID3</x:Reference>
+        <x:Reference>__ReferenceID1</x:Reference>
       </FlowStep.Next>
     </FlowStep>
+    <x:Reference>__ReferenceID2</x:Reference>
+    <x:Reference>__ReferenceID3</x:Reference>
     <x:Reference>__ReferenceID4</x:Reference>
-    <x:Reference>__ReferenceID5</x:Reference>
   </Flowchart>
 </Activity>
