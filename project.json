@@ -4,6 +4,7 @@
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.DocumentUnderstanding.ML.Activities": "[1.17.0]",
+    "UiPath.DocumentUnderstanding.OCR.LocalServer": "[1.3.0]",
     "UiPath.Excel.Activities": "[2.16.0]",
     "UiPath.Form.Activities": "[2.0.3]",
     "UiPath.FormActivityLibrary": "[2.0.3]",
@@ -21,7 +22,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "22.10.3.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.4",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -63,6 +64,8 @@
   ],
   "isTemplate": false,
   "templateProjectData": {},
-  "publishData": {},
+  "publishData": {
+    "iconUrl": ".package/Quit.png"
+  },
   "targetFramework": "Windows"
 }
