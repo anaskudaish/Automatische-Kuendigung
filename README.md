@@ -5,18 +5,18 @@
 
 *Ein Interdisziplinäres Projekt im Rahmen des Studiums an der FH Aachen, es handelt sich um einen automatisierten Prozess zur Kündigung von Verträgen*
 
-# Installation
-
-
-
-```bash
- öffnen Sie UiPath Studio 
- gehen Sie auf Team
- klicken Sie auf Repository klonen
- geben Sie Bei Repository-URL diesen Link < https://github.com/anaskudaish/Automatische-Kuendigung > ein.
- 
- ```
- 
- ## Autor
+ ## Team
 
 [@anaskudaish](https://www.github.com/anaskudaish)
+
+[@aminaw1](https://www.github.com/aminaw1)
+
+[@blanc1a](https://www.github.com/blanc1a)
+
+[@Stefaaaaan](https://www.github.com/Stefaaaaan)
+
+[@MariaaaL](https://www.github.com/MariaaaL)
+
+[@Nioly](https://www.github.com/Nioly)
+
+[@defnearslan](https://www.github.com/anaskudaish)
