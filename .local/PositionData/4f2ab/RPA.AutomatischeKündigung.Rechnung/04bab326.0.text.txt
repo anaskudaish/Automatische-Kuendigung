@@ -2,7 +2,7 @@
 
 Ihre Rechnung
 
-2
+O,
 
 Telefónica Germany GmbH & Co. OHG RE 90345 Nürnberg
 
@@ -68,8 +68,6 @@ Seite 1 von 3
 
 Ihre Rechnungsdetails
 
-2
-
 Mobilfunknummer 0176000000/Festnetznummer 030000000                                      
 Vertragslaufzeit: 20.01.18 - 19.01.20                             MwSt.-Satz   Netto in €
 Kündigungsfrist: 3 Monat(e) zum 19.01.20                                                 
@@ -93,17 +91,13 @@ Guthabenbuchungen und Vergünstigungen (ohne MwSt.)
 Sonderrabatt (1 Monat) - gültig bis 19.02.2018                    19%          -25,2016  
 Gesamt (ohne MwSt.)                                                            46,2014   
 
-☐
-
-☐
-
 Seite 2 von 3
 
 <VS>
 
 Gut zu wissen
 
-2
+O,
 
 Informationen zu Ihrem Vertrag (Stand 19.04.18) Rufnummer Vertragsbeginn Ende Mindestvertragslaufzeit Kündigungsfrist spätester Kündigungseingang Kündigungseingang am
 
@@ -128,7 +122,7 @@ verbraucht*
 Kostenpflichtige Mehrwertdienste ("Premiumdienste"): Gebühren werden kostenfrei in den ersten Sekunden angesagt; aufgrund der derzeit geltenden gesetzlichen Regelungen wird abweichend von den vereinbarten Preisen zu Rufnummern für Premiumdienste vorläufig für zeitabhängige Dienste ein maximales Entgelt von 3,00 EUR /Min. und für zeitunabhängige Dienste von 30,00 EUR berechnet.
 Bis zum In-Kraft-Treten einer anderweitigen Regelung verzichtet Telefónica Germany GmbH & Co. OHG auf die Berechnung eines darüber hinausgehenden Entgeltanteils.
 
-i
+i +
 
 Soweit nicht abweichend gekennzeichnet, entsprechen alle Zeiträume dem Abrechnungszeitraum auf Seite 1.
 
@@ -140,7 +134,5 @@ Soweit aus technischen Gründen keine Verkehrsdaten gespeichert oder diese nach 
 Dies gilt entsprechend, soweit Sie nach einem deutlich erkennbaren Hinweis auf die vorgenannten Folgen verlangt haben, dass Verkehrsdaten gelöscht oder nicht gespeichert werden.
 Die Zahlung ist mit Zugang dieser Rechnung fällig.
 Die Abrechnung kann unberechnete Beträge aus den Vormonaten enthalten.
-
-+
 
 Seite 3 von 3

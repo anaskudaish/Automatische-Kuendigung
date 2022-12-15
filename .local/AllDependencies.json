@@ -29651,7 +29651,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anask\\.nuget\\packages\\": {}
+    "C:\\Users\\anask\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "restore": {
@@ -29659,7 +29660,10 @@
       "projectName": "Autmatische Kündigung",
       "projectPath": "C:\\Users\\anask\\OneDrive\\Desktop\\FH\\S5\\Robotic Process Automation with UiPath\\Automatische Kündigung\\.local",
       "packagesPath": "C:\\Users\\anask\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anask\\OneDrive\\Desktop\\FH\\S5\\Robotic Process Automation with UiPath\\Automatische Kündigung\\.local"
+      "outputPath": "C:\\Users\\anask\\OneDrive\\Desktop\\FH\\S5\\Robotic Process Automation with UiPath\\Automatische Kündigung\\.local",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ]
     },
     "frameworks": {
       "net6.0-windows7.0": {
